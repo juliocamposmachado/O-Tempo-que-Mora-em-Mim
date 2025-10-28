@@ -31,7 +31,7 @@ function App() {
     {
       title: "Quando o Tempo Vira Poesia",
       excerpt: "Nas linhas do rosto, leio poemas de vida vivida.",
-      image: "https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/wowow.png?auto=compress&cs=tinysrgb&w=800"
+      image: "https://drive.google.com/file/d/1fQHLuMNd9qVAIlJal3dqRWzQuaF2onov/view?usp=sharing?auto=compress&cs=tinysrgb&w=800"
     }
   ];
 
