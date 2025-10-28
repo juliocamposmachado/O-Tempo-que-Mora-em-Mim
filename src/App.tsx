@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Flower2, Coffee, Clock, Mail, Heart, BookOpen, Sparkles } from 'lucide-react';
+import { Flower2, Coffee, Clock, Mail, Heart, Sparkles } from 'lucide-react';
 
 function App() {
   const [currentQuote, setCurrentQuote] = useState(0);
@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 via-amber-50 to-pink-50">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
+      <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-20 overflow-hidden gap-12">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 text-rose-300">
             <Flower2 size={80} />
@@ -60,40 +60,38 @@ function App() {
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto text-center z-10 fade-in">
-          <div className="mb-8">
-            <Sparkles className="inline-block text-amber-400 mb-4" size={40} />
-          </div>
+        {/* Texto principal */}
+        <div className="max-w-2xl text-center md:text-left z-10 fade-in">
+          <Sparkles className="inline-block text-amber-400 mb-4" size={40} />
           <h1 className="title-font text-5xl md:text-7xl font-bold text-rose-900 mb-6 leading-tight">
             O Tempo Mora em Nós
           </h1>
           <p className="title-font text-2xl md:text-3xl text-rose-700 mb-8 italic">
             As Palavras que Curam o Espelho e o Coração
           </p>
-          <p className="text-xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-700 mb-12 max-w-2xl leading-relaxed">
             Uma jornada poética pela alma feminina, guiada pelas palavras de Marcela França
           </p>
           <button className="bg-gradient-to-r from-rose-400 to-pink-400 hover:from-rose-500 hover:to-pink-500 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
             Adquira o livro agora
           </button>
-
-      <a
-  href="https://seulinkdecompra.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-block bg-white p-4 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300"
->
-  <div className="w-64 h-80 rounded-md overflow-hidden">
-    <img
-      src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/capa%20livro%20marcela%20franca.jpg"
-      alt="Capa do livro O Tempo que Mora em Mim"
-      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-    />
-  </div>
-</a>
-
-          </div>
         </div>
+
+        {/* Capa do Livro */}
+        <a
+          href="https://seulinkdecompra.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white p-4 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 z-10"
+        >
+          <div className="w-64 h-80 rounded-md overflow-hidden">
+            <img
+              src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/main/src/capa_livro_marcela_franca.jpg"
+              alt="Capa do livro O Tempo que Mora em Mim"
+              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+            />
+          </div>
+        </a>
       </section>
 
       {/* About Section */}
@@ -115,12 +113,8 @@ function App() {
                 Sobre a Autora
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
-                <p>
-                  Sou Marcela França — jornalista, mulher e eterna aprendiz do tempo.
-                </p>
-                <p>
-                  Escrevo como quem conversa com uma amiga, sobre as dores e belezas de envelhecer, amar e recomeçar.
-                </p>
+                <p>Sou Marcela França — jornalista, mulher e eterna aprendiz do tempo.</p>
+                <p>Escrevo como quem conversa com uma amiga, sobre as dores e belezas de envelhecer, amar e recomeçar.</p>
                 <p className="italic text-rose-700">
                   Minhas palavras nascem do silêncio, da fé e das cicatrizes que o tempo transformou em flores.
                 </p>
@@ -144,20 +138,12 @@ function App() {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="h-64 overflow-hidden relative">
-                  <img
-                    src={book.image}
-                    alt={book.title}
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={book.image} alt={book.title} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-rose-900/60 to-transparent"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="title-font text-2xl font-bold text-rose-900 mb-4">
-                    {book.title}
-                  </h3>
-                  <p className="text-gray-600 italic mb-6 leading-relaxed">
-                    "{book.excerpt}"
-                  </p>
+                  <h3 className="title-font text-2xl font-bold text-rose-900 mb-4">{book.title}</h3>
+                  <p className="text-gray-600 italic mb-6 leading-relaxed">"{book.excerpt}"</p>
                   <div className="space-y-3">
                     <button className="w-full bg-rose-500 hover:bg-rose-600 text-white py-3 rounded-lg font-medium transition-colors duration-300">
                       Comprar agora
@@ -176,9 +162,7 @@ function App() {
       {/* Quotes Section */}
       <section className="py-20 px-6 bg-gradient-to-r from-rose-100 via-pink-100 to-amber-100">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="title-font text-4xl font-bold text-rose-900 mb-12">
-            Trechos que Acolhem
-          </h2>
+          <h2 className="title-font text-4xl font-bold text-rose-900 mb-12">Trechos que Acolhem</h2>
           <div className="relative h-32 flex items-center justify-center">
             {quotes.map((quote, index) => (
               <p
@@ -194,12 +178,10 @@ function App() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Testimonials */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="title-font text-4xl font-bold text-center text-rose-900 mb-16">
-            Depoimentos das Leitoras
-          </h2>
+          <h2 className="title-font text-4xl font-bold text-center text-rose-900 mb-16">Depoimentos das Leitoras</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div
@@ -208,16 +190,14 @@ function App() {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <Flower2 className="text-rose-400 mb-4" size={32} />
-                <p className="text-gray-700 italic leading-relaxed">
-                  "{testimonial}"
-                </p>
+                <p className="text-gray-700 italic leading-relaxed">"{testimonial}"</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Final CTA Section */}
+      {/* CTA Final */}
       <section className="py-20 px-6 bg-gradient-to-br from-rose-200 via-pink-200 to-amber-100">
         <div className="max-w-4xl mx-auto text-center">
           <Sparkles className="inline-block text-amber-500 mb-6" size={48} />
@@ -230,7 +210,7 @@ function App() {
         </div>
       </section>
 
-      {/* Newsletter Section */}
+      {/* Newsletter */}
       <section className="py-16 px-6 bg-white/80">
         <div className="max-w-2xl mx-auto text-center">
           <Mail className="inline-block text-rose-500 mb-4" size={48} />
@@ -250,16 +230,14 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Rodapé */}
       <footer className="py-12 px-6 bg-rose-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-6">
-            <p className="signature-font text-4xl mb-2">Com carinho,</p>
-            <p className="signature-font text-5xl text-rose-300">Marcela França</p>
-            <p className="text-rose-200 mt-2">Jornalista, mulher e eterna aprendiz do tempo</p>
-          </div>
+          <p className="signature-font text-4xl mb-2">Com carinho,</p>
+          <p className="signature-font text-5xl text-rose-300">Marcela França</p>
+          <p className="text-rose-200 mt-2">Jornalista, mulher e eterna aprendiz do tempo</p>
 
-          <div className="flex justify-center gap-6 mb-8">
+          <div className="flex justify-center gap-6 mb-8 mt-6">
             <Flower2 className="text-rose-300" size={24} />
             <Coffee className="text-rose-300" size={24} />
             <Clock className="text-rose-300" size={24} />
