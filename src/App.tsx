@@ -84,7 +84,7 @@ function App() {
           rel="noopener noreferrer"
           className="inline-block bg-white p-4 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 z-10"
         >
-          <div className="w-64 h-80 rounded-md overflow-hidden">
+          <div className="w-64 h-100 rounded-md overflow-hidden">
             <img
               src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/capa.jpg"
               alt="Capa do livro O Tempo que Mora em Mim"
