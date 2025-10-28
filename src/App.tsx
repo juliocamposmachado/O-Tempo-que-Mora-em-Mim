@@ -90,7 +90,7 @@ function App() {
   <img
     src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/www.png"
     alt="QR Code de pagamento"
-    className="absolute bottom-4 right-2 w-16 h-16 rounded-sm shadow-md"
+    className="absolute bottom-9 right-2 w-16 h-16 rounded-sm shadow-md"
   />
 
 
