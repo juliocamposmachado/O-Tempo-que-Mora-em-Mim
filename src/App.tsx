@@ -21,17 +21,17 @@ function App() {
     {
       title: "O Tempo que Mora em Mim",
       excerpt: "O espelho não é um juiz, é um amigo que reflete histórias.",
-      color: "from-rose-100 to-pink-50"
+      image: "https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       title: "A Mulher Que Eu Fui, A Mulher Que Eu Sou",
       excerpt: "Cada cicatriz é uma flor que nasceu do tempo.",
-      color: "from-purple-100 to-rose-50"
+      image: "https://images.pexels.com/photos/3771089/pexels-photo-3771089.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       title: "Quando o Tempo Vira Poesia",
       excerpt: "Nas linhas do rosto, leio poemas de vida vivida.",
-      color: "from-amber-50 to-rose-50"
+      image: "https://images.pexels.com/photos/4057659/pexels-photo-4057659.jpeg?auto=compress&cs=tinysrgb&w=800"
     }
   ];
 
@@ -65,7 +65,7 @@ function App() {
             <Sparkles className="inline-block text-amber-400 mb-4" size={40} />
           </div>
           <h1 className="title-font text-5xl md:text-7xl font-bold text-rose-900 mb-6 leading-tight">
-            O Tempo que Mora em Mim
+            O Tempo Mora em Nós
           </h1>
           <p className="title-font text-2xl md:text-3xl text-rose-700 mb-8 italic">
             As Palavras que Curam o Espelho e o Coração
@@ -80,7 +80,6 @@ function App() {
           <div className="mt-16 relative">
             <div className="inline-block bg-white p-4 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <div className="w-64 h-80 bg-gradient-to-br from-rose-200 via-pink-200 to-amber-100 rounded-md flex items-center justify-center">
-                ![Imagem do WhatsApp de 2025-10-28 à(s) 02 17 09_5a595fa3](https://github.com/user-attachments/assets/ad02aa80-0dc9-49a3-87f8-e4b479f1ddf1)
                 <BookOpen size={80} className="text-rose-700" />
               </div>
             </div>
@@ -135,8 +134,13 @@ function App() {
                 className="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 fade-in"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className={`h-64 bg-gradient-to-br ${book.color} flex items-center justify-center p-6`}>
-                  <BookOpen size={80} className="text-rose-700" />
+                <div className="h-64 overflow-hidden relative">
+                  <img
+                    src={book.image}
+                    alt={book.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-rose-900/60 to-transparent"></div>
                 </div>
                 <div className="p-6">
                   <h3 className="title-font text-2xl font-bold text-rose-900 mb-4">
