@@ -161,7 +161,7 @@ function App() {
 
 {/* Botão de compra */}
   <a
-    href="https://seu-link-de-compra-aqui.com" // Substitua pelo link real da loja
+    href="https://go.hotmart.com/J102645963S" // Substitua pelo link real da loja
     target="_blank"
     rel="noopener noreferrer"
   >
