@@ -26,7 +26,7 @@ function App() {
     {
       title: "A Mulher Que Eu Fui, A Mulher Que Eu Sou",
       excerpt: "Cada cicatriz é uma flor que nasceu do tempo.",
-      image: "https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/ma.png?auto=compress&cs=tinysrgb&w=800"
+      image: "https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/mmm.png?auto=compress&cs=tinysrgb&w=800"
     },
     {
       title: "Quando o Tempo Vira Poesia",
