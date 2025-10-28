@@ -84,13 +84,21 @@ function App() {
           rel="noopener noreferrer"
           className="inline-block bg-white p-4 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 z-10"
         >
-          <div className="w-64 h-100 rounded-md overflow-hidden">
-            <img
-              src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/ebook%20marcela.jpg"
-              alt="Capa do livro O Tempo que Mora em Mim"
-              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-            />
-          </div>
+          <div className="relative w-64 h-100 rounded-md overflow-hidden">
+  {/* Capa do livro */}
+  <img
+    src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/ebook%20marcela.jpg"
+    alt="Capa do livro O Tempo que Mora em Mim"
+    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+  />
+
+  {/* QR Code posicionado no canto inferior direito */}
+  <img
+    src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/www.png"
+    alt="QR Code de pagamento"
+    className="absolute bottom-2 right-2 w-16 h-16 rounded-sm shadow-md"
+  />
+</div>
         </a>
       </section>
 
