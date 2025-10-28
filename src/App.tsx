@@ -64,7 +64,7 @@ function App() {
         <div className="max-w-2xl text-center md:text-left z-10 fade-in">
           <Sparkles className="inline-block text-amber-400 mb-4" size={40} />
           <h1 className="title-font text-5xl md:text-7xl font-bold text-rose-900 mb-6 leading-tight">
-            O Tempo Mora em Nós
+            O Tempo Mora em Mim
           </h1>
           <p className="title-font text-2xl md:text-3xl text-rose-700 mb-8 italic">
             As Palavras que Curam o Espelho e o Coração
