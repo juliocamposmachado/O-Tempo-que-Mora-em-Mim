@@ -21,7 +21,7 @@ function App() {
     {
       title: "O Tempo que Mora em Mim",
       excerpt: "O espelho não é um juiz, é um amigo que reflete histórias.",
-      image: "https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/wow.png?auto=compress&cs=tinysrgb&w=800"
     },
     {
       title: "A Mulher Que Eu Fui, A Mulher Que Eu Sou",
