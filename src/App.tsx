@@ -79,7 +79,7 @@ function App() {
 
         {/* Capa do Livro */}
         <a
-          href="https://seulinkdecompra.com"
+          href="https://www.canva.com/design/DAG3DMD9ngs/1YP-MAiYepi-my58ZaDezA/view?utm_content=DAG3DMD9ngs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf58b2100d8"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-white p-4 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 z-10"
