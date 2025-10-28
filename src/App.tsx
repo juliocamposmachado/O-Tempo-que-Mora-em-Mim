@@ -65,7 +65,7 @@ function App() {
             <Sparkles className="inline-block text-amber-400 mb-4" size={40} />
           </div>
           <h1 className="title-font text-5xl md:text-7xl font-bold text-rose-900 mb-6 leading-tight">
-            O Tempo Mora em Nós
+            O Tempo que Mora em Mim
           </h1>
           <p className="title-font text-2xl md:text-3xl text-rose-700 mb-8 italic">
             As Palavras que Curam o Espelho e o Coração
@@ -80,6 +80,7 @@ function App() {
           <div className="mt-16 relative">
             <div className="inline-block bg-white p-4 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <div className="w-64 h-80 bg-gradient-to-br from-rose-200 via-pink-200 to-amber-100 rounded-md flex items-center justify-center">
+                ![Imagem do WhatsApp de 2025-10-28 à(s) 02 17 09_5a595fa3](https://github.com/user-attachments/assets/ad02aa80-0dc9-49a3-87f8-e4b479f1ddf1)
                 <BookOpen size={80} className="text-rose-700" />
               </div>
             </div>
