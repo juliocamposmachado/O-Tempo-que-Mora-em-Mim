@@ -31,7 +31,7 @@ function App() {
     {
       title: "Quando o Tempo Vira Poesia",
       excerpt: "Nas linhas do rosto, leio poemas de vida vivida.",
-      image: "https://live.staticflickr.com/65535/54886156957_49b31bf1b7_m.jpg?auto=compress&cs=tinysrgb&w=800"
+      image: "https://live.staticflickr.com/65535/54887268593_42732e25e4_m.jpg?auto=compress&cs=tinysrgb&w=800"
     }
   ];
 
