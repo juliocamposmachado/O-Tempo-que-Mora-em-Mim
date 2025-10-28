@@ -103,7 +103,7 @@ function App() {
 
           {/* QR Code posicionado */}
           <img
-            src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/www.png"
+            src="https://live.staticflickr.com/65535/54887327795_2bd6d510ef_m.jpg"
             alt="QR Code de pagamento"
             className="absolute bottom-20 right-2 w-16 h-16 rounded-sm shadow-md"
           />
