@@ -94,23 +94,30 @@ function App() {
         </a>
       </section>
 
-      {/* About Section */}
-      <section className="py-20 px-6 bg-white/50">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
-              <div className="relative">
-                <div className="w-72 h-72 rounded-full bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center shadow-xl">
-                  <Heart size={100} className="text-rose-600" />
-                </div>
-                <div className="absolute -bottom-4 -right-4 bg-amber-400 rounded-full p-3">
-                  <Flower2 size={32} className="text-white" />
-                </div>
-              </div>
-            </div>
-            <div className="fade-in">
-              <h2 className="title-font text-4xl font-bold text-rose-900 mb-6">
-                Sobre a Autora
+
+
+{/* About Section */}
+<section className="py-20 px-6 bg-white/50">
+  <div className="max-w-6xl mx-auto">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="flex justify-center">
+        <div className="relative">
+          {/* Círculo com gradiente contendo a foto */}
+          <div className="w-72 h-72 rounded-full bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center shadow-xl overflow-hidden">
+            <img
+              src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/image%20(5).png" // Substitua pelo link da foto
+              alt="Marcela França — jornalista, mulher e eterna aprendiz do tempo"
+              className="w-full h-full object-cover" // Preenche o círculo
+            />
+          </div>
+          <div className="absolute -bottom-4 -right-4 bg-amber-400 rounded-full p-3">
+            <Flower2 size={32} className="text-white" />
+          </div>
+        </div>
+      </div>
+      <div className="fade-in">
+        <h2 className="title-font text-4xl font-bold text-rose-900 mb-6">
+             Sobre a Autora
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
                 <p>Sou Marcela França — jornalista, mulher e eterna aprendiz do tempo.</p>
