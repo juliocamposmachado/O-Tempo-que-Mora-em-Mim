@@ -43,6 +43,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 via-amber-50 to-pink-50">
+      
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-20 overflow-hidden gap-12">
         <div className="absolute inset-0 opacity-10">
@@ -72,56 +73,64 @@ function App() {
           <p className="text-xl text-gray-700 mb-12 max-w-2xl leading-relaxed">
             Uma jornada poética pela alma feminina, guiada pelas palavras de Marcela França
           </p>
-          <button className="bg-gradient-to-r from-rose-400 to-pink-400 hover:from-rose-500 hover:to-pink-500 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-            Adquira o livro agora
-          </button>
+
+          {/* Botão principal com link */}
+          <a
+            href="https://pay.hotmart.com/J102645963S"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-gradient-to-r from-rose-400 to-pink-400 hover:from-rose-500 hover:to-pink-500 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+              Adquira o livro agora
+            </button>
+          </a>
         </div>
 
         {/* Capa do Livro */}
         <a
-          href="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/www.png"
+          href="https://pay.hotmart.com/J102645963S"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-white p-4 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 z-10"
         >
-          <div className="w-64 h-100 rounded-md overflow-hidden"> <img src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/ebook%20marcela.jpg" alt="Capa do livro O Tempo que Mora em Mim" className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" /> </div>
+          <div className="w-64 h-100 rounded-md overflow-hidden">
+            <img
+              src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/ebook%20marcela.jpg"
+              alt="Capa do livro O Tempo que Mora em Mim"
+              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+            />
+          </div>
 
-          {/* QR Code posicionado no canto inferior direito */}
-  <img
-    src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/www.png"
-    alt="QR Code de pagamento"
-    className="absolute bottom-20 right-2 w-16 h-16 rounded-sm shadow-md"
-  />
-
-
-          
+          {/* QR Code posicionado */}
+          <img
+            src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/www.png"
+            alt="QR Code de pagamento"
+            className="absolute bottom-20 right-2 w-16 h-16 rounded-sm shadow-md"
+          />
         </a>
       </section>
 
-
-
-{/* About Section */}
-<section className="py-20 px-6 bg-white/50">
-  <div className="max-w-6xl mx-auto">
-    <div className="grid md:grid-cols-2 gap-12 items-center">
-      <div className="flex justify-center">
-        <div className="relative">
-          {/* Círculo com gradiente contendo a foto */}
-          <div className="w-72 h-72 rounded-full bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center shadow-xl overflow-hidden">
-            <img
-              src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/image%20(5).png" // Substitua pelo link da foto
-              alt="Marcela França — jornalista, mulher e eterna aprendiz do tempo"
-              className="w-full h-full object-cover" // Preenche o círculo
-            />
-          </div>
-          <div className="absolute -bottom-4 -right-4 bg-amber-400 rounded-full p-3">
-            <Flower2 size={32} className="text-white" />
-          </div>
-        </div>
-      </div>
-      <div className="fade-in">
-        <h2 className="title-font text-4xl font-bold text-rose-900 mb-6">
-             Sobre a Autora
+      {/* About Section */}
+      <section className="py-20 px-6 bg-white/50">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center">
+              <div className="relative">
+                <div className="w-72 h-72 rounded-full bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center shadow-xl overflow-hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/image%20(5).png"
+                    alt="Marcela França — jornalista, mulher e eterna aprendiz do tempo"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -right-4 bg-amber-400 rounded-full p-3">
+                  <Flower2 size={32} className="text-white" />
+                </div>
+              </div>
+            </div>
+            <div className="fade-in">
+              <h2 className="title-font text-4xl font-bold text-rose-900 mb-6">
+                Sobre a Autora
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
                 <p>Sou Marcela França — jornalista, mulher e eterna aprendiz do tempo.</p>
@@ -157,34 +166,28 @@ function App() {
                   <p className="text-gray-600 italic mb-6 leading-relaxed">"{book.excerpt}"</p>
                   <div className="space-y-3">
 
+                    {/* Botão de compra */}
+                    <a
+                      href="https://go.hotmart.com/J102645963S"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="w-full bg-rose-500 hover:bg-rose-600 text-white py-3 rounded-lg font-medium transition-colors duration-300">
+                        Comprar agora
+                      </button>
+                    </a>
 
+                    {/* Botão de amostra gratuita */}
+                    <a
+                      href="https://www.canva.com/design/DAG3EzutygQ/heqn4noqFRUJLhCLi51Q8Q/view?utm_content=DAG3EzutygQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9974c9e38c"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="w-full border-2 border-rose-300 text-rose-700 hover:bg-rose-50 py-3 rounded-lg font-medium transition-colors duration-300">
+                        Ler amostra gratuita
+                      </button>
+                    </a>
 
-{/* Botão de compra */}
-  <a
-    href="https://go.hotmart.com/J102645963S" // Substitua pelo link real da loja
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <button className="w-full bg-rose-500 hover:bg-rose-600 text-white py-3 rounded-lg font-medium transition-colors duration-300">
-      Comprar agora
-    </button>
-  </a>
-
-  {/* Botão para ler amostra gratuita */}
-  <a
-    href="https://www.canva.com/design/DAG3EzutygQ/heqn4noqFRUJLhCLi51Q8Q/view?utm_content=DAG3EzutygQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9974c9e38c"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <button className="w-full border-2 border-rose-300 text-rose-700 hover:bg-rose-50 py-3 rounded-lg font-medium transition-colors duration-300">
-      Ler amostra gratuita
-    </button>
-
-
-
-
-
-                    
                   </div>
                 </div>
               </div>
@@ -238,9 +241,15 @@ function App() {
           <h2 className="signature-font text-5xl md:text-6xl text-rose-900 mb-8">
             Que cada linha deste livro te lembre: o tempo mora em você.
           </h2>
-          <button className="bg-rose-600 hover:bg-rose-700 text-white px-12 py-5 rounded-full text-xl font-medium shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105">
-            Adquira agora seu exemplar
-          </button>
+          <a
+            href="https://pay.hotmart.com/J102645963S"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-rose-600 hover:bg-rose-700 text-white px-12 py-5 rounded-full text-xl font-medium shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105">
+              Adquira agora seu exemplar
+            </button>
+          </a>
         </div>
       </section>
 
