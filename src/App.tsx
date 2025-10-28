@@ -95,7 +95,7 @@ function App() {
         >
           <div className="w-64 h-100 rounded-md overflow-hidden">
             <img
-              src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/ebook%20marcela.jpg"
+              src="https://live.staticflickr.com/65535/54887040706_5f29f6cc9f_m.jpg"
               alt="Capa do livro O Tempo que Mora em Mim"
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
