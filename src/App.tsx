@@ -77,12 +77,16 @@ function App() {
             Adquira o livro agora
           </button>
 
-          <div className="mt-16 relative">
-            <div className="inline-block bg-white p-4 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300">
-              <div className="w-64 h-80 bg-gradient-to-br from-rose-200 via-pink-200 to-amber-100 rounded-md flex items-center justify-center">
-                <BookOpen size={80} className="text-rose-700" />
-              </div>
-            </div>
+        <div className="inline-block bg-white p-4 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300">
+  <div className="w-64 h-80 rounded-md overflow-hidden">
+    <img
+      src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/capa%20livro%20marcela%20franca.jpg"
+      alt="Capa do livro O Tempo que Mora em Mim"
+      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+    />
+  </div>
+</div>
+
           </div>
         </div>
       </section>
