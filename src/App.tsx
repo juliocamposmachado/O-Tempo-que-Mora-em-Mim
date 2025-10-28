@@ -156,12 +156,35 @@ function App() {
                   <h3 className="title-font text-2xl font-bold text-rose-900 mb-4">{book.title}</h3>
                   <p className="text-gray-600 italic mb-6 leading-relaxed">"{book.excerpt}"</p>
                   <div className="space-y-3">
-                    <button className="w-full bg-rose-500 hover:bg-rose-600 text-white py-3 rounded-lg font-medium transition-colors duration-300">
-                      Comprar agora
-                    </button>
-                    <button className="w-full border-2 border-rose-300 text-rose-700 hover:bg-rose-50 py-3 rounded-lg font-medium transition-colors duration-300">
-                      Ler amostra gratuita
-                    </button>
+
+
+
+{/* Botão de compra */}
+  <a
+    href="https://seu-link-de-compra-aqui.com" // Substitua pelo link real da loja
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button className="w-full bg-rose-500 hover:bg-rose-600 text-white py-3 rounded-lg font-medium transition-colors duration-300">
+      Comprar agora
+    </button>
+  </a>
+
+  {/* Botão para ler amostra gratuita */}
+  <a
+    href="https://www.canva.com/design/DAG3EzutygQ/heqn4noqFRUJLhCLi51Q8Q/view?utm_content=DAG3EzutygQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9974c9e38c"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button className="w-full border-2 border-rose-300 text-rose-700 hover:bg-rose-50 py-3 rounded-lg font-medium transition-colors duration-300">
+      Ler amostra gratuita
+    </button>
+
+
+
+
+
+                    
                   </div>
                 </div>
               </div>
