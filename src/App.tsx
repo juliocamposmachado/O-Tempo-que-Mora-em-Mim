@@ -118,7 +118,7 @@ function App() {
               <div className="relative">
                 <div className="w-72 h-72 rounded-full bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center shadow-xl overflow-hidden">
                   <img
-                    src="https://raw.githubusercontent.com/juliocamposmachado/O-Tempo-que-Mora-em-Mim/refs/heads/main/src/image%20(5).png"
+                    src="https://live.staticflickr.com/65535/54887046406_b75b070119_m.jpg"
                     alt="Marcela França — jornalista, mulher e eterna aprendiz do tempo"
                     className="w-full h-full object-cover"
                   />
