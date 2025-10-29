@@ -24,12 +24,12 @@ function App() {
       image: "https://live.staticflickr.com/65535/54886156957_49b31bf1b7_m.jpg?auto=compress&cs=tinysrgb&w=800"
     },
     {
-      title: "A Mulher Que Eu Fui, A Mulher Que Eu Sou",
+      title: "O Tempo que Mora em Mim",
       excerpt: "Cada cicatriz é uma flor que nasceu do tempo.",
       image: "https://live.staticflickr.com/65535/54886135017_c4e0d0fc2f_m.jpg?auto=compress&cs=tinysrgb&w=800"
     },
     {
-      title: "Quando o Tempo Vira Poesia",
+      title: "O Tempo que Mora em Mim",
       excerpt: "Nas linhas do rosto, leio poemas de vida vivida.",
       image: "https://live.staticflickr.com/65535/54887268593_42732e25e4_m.jpg?auto=compress&cs=tinysrgb&w=800"
     }
