@@ -101,12 +101,7 @@ function App() {
             />
           </div>
 
-          {/* QR Code posicionado */}
-          <img
-            src="https://live.staticflickr.com/65535/54887327795_2bd6d510ef_m.jpg"
-            alt="QR Code de pagamento"
-            className="absolute bottom-20 right-2 w-16 h-16 rounded-sm shadow-md"
-          />
+          
         </a>
       </section>
 
